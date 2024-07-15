@@ -59,8 +59,8 @@ Key interfaces in this project include `AddressComponents`, `WeatherResponse`, a
 1. Clone the repository:
 
    ```
-   git clone https://your-repository-url.git
-   cd WeatherForecastApp
+   git clone https://github.com/NT5K/WeatherApp.git
+   cd WeatherApp
    ```
 
 2. Navigate to the backend directory:
