@@ -102,7 +102,7 @@ The API will start running, typically on `https://localhost:5001` and `http://lo
    yarn
    ```
    
-3 Make sure the localhost port in the ``vite.config.ts` file is the same as the the one running the backend server (check on backend terminal).
+3. Make sure the localhost port in the ``vite.config.ts` file is the same as the the one running the backend server (check on backend terminal).
 
 4. Start the development server:
    ```
