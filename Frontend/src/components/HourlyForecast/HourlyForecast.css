@@ -1,0 +1,67 @@
+.hourly-forecast-container {
+    position: relative;
+}
+
+.hourly-forecast-wrapper {
+    overflow: hidden;
+}
+
+.hourly-forecast {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE/Edge */
+}
+
+.hourly-forecast::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome/Safari/Opera */
+}
+
+.hourly-item {
+    flex: 0 0 calc(100% / 6);
+    max-width: calc(100% / 6);
+}
+
+@media (max-width: 768px) {
+    .hourly-item {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+}
+
+@media (max-width: 576px) {
+    .hourly-item {
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+    }
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Additional styles for better visibility */
+.hourly-forecast-container .btn {
+    z-index: 1;
+}
+
+.hourly-forecast-wrapper {
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0;
+}
+
+.hourly-item {
+    border: none;
+    background-color: transparent;
+}
+
+.hourly-item .card-body {
+    padding: 0.5rem;
+}
