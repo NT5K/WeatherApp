@@ -1,0 +1,106 @@
+/* 
+  Decided to use Bootstrap for the styling of the app.
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities'; 
+*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.weather-app {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.hourly-forecast {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 120px;
+}
+
+.hourly-item .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hourly-item p {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .hourly-forecast {
+    justify-content: flex-start;
+  }
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.item {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.form-group {
+  position: relative;
+}
+
+.input-group .btn-outline-secondary {
+  border-color: #ced4da;
+}
+
+.list-group {
+  max-height: 200px;
+  overflow-y: auto;
+}
